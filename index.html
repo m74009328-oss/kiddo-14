@@ -1,236 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-     <link rel="stylesheet" href="./style.css">
-     <title>Triangle Website Hero | HTML, CSS, Javascript</title>
-  </head>
-  <body>
-    <header>
-      <a href="/" class="logo">logo</a>
-      <div class="header-right">
-           <ul class="nav">
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="">Contact</a></li>
-           </ul>
-             <a href="#" class="menu" onclick="toggleMenu();"><i class='bx bx-menu-alt-right'></i></a>
-      </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+         href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+         rel="stylesheet"
+         />
+         <link rel="stylesheet" href="style.css">
+        <title>Web Design Mastery | IceWorld</title>   
+    </head>
+   <body>
+    <nav>
+        <div class="nav_header">
+         <div class="nav_logo">
+         <a href="#" class="logo">Ice<span>World</span></a>
+         </div>
+         <div class="nav_menu_btn" id="menu-btn">
+           <i class="ri-menu-3-line"></i>
+         </div>
+        </div>
+        <ul class="nav_links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="nav_btns">
+            <button class="btn"><i class="ri-shopping-cart-line"></i></button>
+            <button class="btn"><i class="ri-notification-3-fill"></i></button>
+        </div>
+    </nav>
+
+    <header id="home">
+       <div class="header_image">
+         <img src="images/header-2.png" alt="header" />
+       </div>
+       <div class="header_content">
+         <h1>WELCOME TO OUR <span>ICE CREAM</span>WORLD</h1>
+          <p class="section_description">
+            Indulge in a delightful journey of flavors! Discover creamy, ice creams crafted to bring joy to every scoop. Welcome to your sweet escape!
+          </p>
+        <div class="header_btn">
+           <button class="btn">Buy Now</button>
+        </div> 
+         <ul class="socials">
+           <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+           </li>
+           <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+           <li>
+            <a href="#"><i class="ri-pinterest-line"></i></a>
+            </li>
+           <li>
+            <a href="#"><i class="ri-phone-fill"></i></a>
+           </li>
+         </ul>
+       </div>
     </header>
-    <ul class="nav-mobile">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="banner">
-      <a href="#" class="share"><i class='bx bx-share-alt' ></i></a>
-      <!-- Triangle -->
-       <div class="triangle one">
-          <div class="flip-card">
-           <div class="flip-card-front">
-              <img src="./images/img-1.jpg" alt="">
-           </div>
-           <div class="flip-card-back">
-            <p>Lorem ipsum dolor sit</p>
-            <a href="#" class="play"><i class='bx bx-play-circle'></i></a>
-           </div>
-          </div>
-       </div>
-       <div class="triangle two">
-          <div class="flip-card">
-           <div class="flip-card-front">
-              <img src="./images/img-2.jpg" alt="">
-           </div>
-           <div class="flip-card-back">
-            <p>Lorem ipsum dolor sit</p>
-            <a href="#" class="play"><i class='bx bx-play-circle' ></i></a>
-           </div>
-          </div>
-       </div>
 
-              <div class="triangle three">
-          <div class="flip-card">
-           <div class="flip-card-front">
-              <img src="./images/img-3.jpg" alt="">
-           </div>
-           <div class="flip-card-back">
-            <p>Lorem ipsum dolor sit</p>
-            <a href="#" class="play"><i class='bx bx-play-circle' ></i></a>
-           </div>
-          </div>
-       </div>
-        
-              <div class="triangle four video-container video-2">
-          <div class="flip-card">
-           <div class="flip-card-front">
-              <video
-              class="video2"
-              src="./videos/trailer-8.mp4.mp4"
-              autoplay
-              loop
-              muted
-              ></video>
-           </div>
-           <div class="flip-card-back">
-            <p>Lorem ipsum dolor sit</p>
-            <a href="#" class="play" onclick="changeVideo('video-2')"><i class='bx bx-play-circle' ></i></a>
-           </div>
-          </div>
-       </div>
-       
-       <div class="triangle five video-container video-1">
-          <div class="flip-card">
-           <div class="flip-card-front">
-              <video
-              class="video-1"
-              src="./videos/trailer-4.mp4 (2).mp4"
-              autoplay
-              loop
-              muted
-              ></video>
-           </div>
-           <div class="flip-card-back">
-            <p>Lorem ipsum dolor sit</p>
-            <a href="#" class="play" onclick="changeVideo('video-2')""><i class='bx bx-play-circle' ></i></a>
-           </div>
-          </div>
-       </div>
-       
-              <div class="triangle six">
-          <div class="flip-card">
-           <div class="flip-card-front">
-              <img src="./images/img-6.jpg" alt="">
-           </div>
-           <div class="flip-card-back">
-            <p>Lorem ipsum dolor sit</p>
-            <a href="#" class="play"><i class='bx bx-play-circle' ></i></a>
-           </div>
-          </div>
-       </div>
-
-              <div class="triangle seven">
-          <div class="flip-card">
-           <div class="flip-card-front">
-              <img src="./images/img-7.jpg" alt="">
-           </div>
-           <div class="flip-card-back">
-            <p>Lorem ipsum dolor sit</p>
-            <a href="#" class="play"><i class='bx bx-play-circle' ></i></a>
-           </div>
-          </div>
-       </div>
-       
-
-<!-- Inversed Triangle -->
-       <div class="triangle-inverse one">
-          <div class="flip-card">
-           <div class="flip-card-front">
-              <img src="./images/img-4.jpg" alt="">
-           </div>
-           <div class="flip-card-back">
-            <a href="#" class="play"><i class='bx bx-play-circle' ></i></a>
-            <p>Lorem ipsum dolor sit</p>
-           </div>
-          </div>
-       </div>
-
-<div class="triangle-inverse two">
-          <div class="flip-card">
-           <div class="flip-card-front">
-              <img src="./images/img-8.jpg" alt="">
-           </div>
-           <div class="flip-card-back">
-            <a href="#" class="play"><i class='bx bx-play-circle' ></i></a>
-            <p>Lorem ipsum dolor sit</p>
-           </div>
-          </div>
-       </div>
-
-<div class="triangle-inverse three video-container video-3 active">
-          <div class="flip-card">
-           <div class="flip-card-front">
-              <video
-              class="video3"
-              src="./videos/trailer-3.mp4.mp4"
-              autoplay
-              loop
-              muted
-              ></video>
-           </div>
-           <div class="flip-card-back">
-            <a href="#" class="play"onclick="changeVideo('video-2')"><i class='bx bx-play-circle' ></i></a>
-            <p>Lorem ipsum dolor sit</p>
-           </div>
-          </div>
-       </div>
-
-<div class="triangle-inverse four">
-          <div class="flip-card">
-           <div class="flip-card-front">
-              <img src="./images/img-10.jpg" alt="">
-           </div>
-           <div class="flip-card-back">
-            <a href="#" class="play"><i class='bx bx-play-circle' ></i></a>
-            <p>Lorem ipsum dolor sit</p>
-           </div>
-          </div>
-       </div>
-
-<div class="triangle-inverse five">
-          <div class="flip-card">
-           <div class="flip-card-front">
-              <img src="./images/img-5.jpg" alt="">
-           </div>
-           <div class="flip-card-back">
-            <a href="#" class="play"><i class='bx bx-play-circle' ></i></a>
-            <p>Lorem ipsum dolor sit</p>
-           </div>
-          </div>
-       </div>
-      <!--Banner Title -->
-      <div class="banner-title">
-         <h1>Mo<span class="text-special">D</span>els</h1>
-         <span class="Subtitle">A Creative Community</span>
+    <section class="section_container popular_container" id="menu">
+      <h2 class="section_header">Popular Ice Cream</h2>
+      <div class="popular_grid">
+      <div class="popular_card">
+        <img src="images/popular-1.png" alt="popular" />
+        <div class="popular_card_content">
+          <h4>Mango Tago Sorbet</h4>
+          <h3>$5.49</h3>
+        </div>
       </div>
+      <div class="popular_grid">
+      <div class="popular_card">
+        <img src="images/popular-2.png" alt="popular" />
+        <div class="popular_card_content">
+          <h4>Chocolate Fudge Delight</h4>
+          <h3>$5.49</h3>
+        </div>
+      </div>
+      <div class="popular_grid">
+      <div class="popular_card">
+        <img src="images/popular-6.png" alt="popular" />
+        <div class="popular_card_content">
+          <h4>Strawberry Swirl Bliss</h4>
+          <h3>$4.99</h3>
+        </div>
+      </div>
+      </div>
+    </section>
 
-       <!--Banner Background Video List-->
-       <div class="big-video-list">
-         <video 
-         class="big-video video-1"
-         src="./videos/trailer-4.mp4 (2).mp4"
-         autoplay
-         loop
-         muted
-         ></video>
-          <video 
-         class="big-video video-2"
-         src="./videos/trailer-4.mp4 (2).mp4 (2).mp4"
-         autoplay
-         loop
-         muted
-         ></video>
-          <video 
-         class="big-video video-3 active"
-         src="./videos/trailer-3.mp4.mp4"
-         autoplay
-         loop
-         muted
-         ></video>
+    <section class="section_container discover_container" id="Categories">
+     <h2 class="section_header">Most selling Ice-Cream</h2>
+     <p class="section_description">
+     Discover our crowd favorites! These ice creans are koved by everyone and have  become the top picks for their irresistible flavors and creamy texturess
+     </p>
+     <div class="discover_grid">
+       <div class="discover_card">
+         <img src="images/discover-1.png" alt="discover" />
+         <div class="discover_card_content">
+          <h4>Double Chocolate Crunch</h4>
+          <p class="section_description">
+            Dive into a chocolate lover's paradise with our Double Chocolate Crunch.This rich and creamy ice cream is made with premium and blended with crunchy chocolate chunks to deliver a perfrct balance of smoothness and texture
+          </p>
+          <h3>
+             $6.99 <span>$9.99</span>
+          </h3>
+              <div class="discover_card_btn">
+               <button class="btn">Buy Now</button>
+              </div>
+         </div>
        </div>
+       <div class="discover_card">
+         <img src="images/discover-2.png" alt="discover" />
+         <div class="discover_card_content">
+          <h4>Strawberry Cheesecake Bliss</h4>
+          <p class="section_description">
+            Experiences the perfect harmony of fruity and creamy with our Strwaberry Cheesecake Bliss. Every spoonful feels like enjoy a slice of fresh strawberry cheesecake, making it an irresistible dessert
+          </p>
+          <h3>
+             $5.99 <span>$8.99</span>
+          </h3>
+              <div class="discover_card_btn">
+               <button class="btn">Buy Now</button>
+              </div>
+         </div>
+       </div>
+       <div class="discover_card">
+         <img src="images/discover-3.png" alt="discover" />
+         <div class="discover_card_content">
+          <h4>Classic cookies and Cream</h4>
+          <p class="section_description">
+            Savor the timeless charm of our Classic Coolies and Cream ice cream. Made with velverty smooth vanilla ice cream, it is generously packed with chunks of chocolate cookies to create a delightful crunch in every bite
+          </p>
+          <h3>
+             $5.99 <span>$10.99</span>
+          </h3>
+              <div class="discover_card_btn">
+               <button class="btn">Buy Now</button>
+              </div>
+         </div>
+       </div>
+     </div>
+    </section>
 
-       <!--Banner Content -->
-       <div class="Content">
-         <a href="#" class="more">Learn more<i class='bx bxs-right-arrow-alt'></i></a>
-         <p>Lorem Ipsum dolar, sit amet consectetur adipisicing elit. Esse
-            soluta. Asperiores ratione recusandae atque cupiditate.
+    <section class="banner">
+        <div class="banner_image"></div>
+        <div class="banner_content">
+           <h2 class="section_header">
+             Get Yummy Ice-Cream at a Reasonable Price
+           </h2>
+              <p class="section_description">
+                Treat yoursekf to delightful ice creams wothout breaking the bank! Enjoy premium quality and mounthwatering flacors at prices that makes every scoop worth it.
+              </p>
+              <div class="banner_flex">
+                 <div class="banner_card">
+                  <img src="images/banner-1.png" alt="banner">
+                   <h4>Fresh & Natural</h4>
+                 </div>
+                 <div class="banner_card">
+                  <img src="images/banner-2.png" alt="banner">
+                   <h4>Quick Packaging</h4>
+                 </div>
+                 <div class="banner_card">
+                  <img src="images/banner-3.png" alt="banner">
+                   <h4>Fast Delivery</h4>
+                 </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="section_container subscribe_container" id="Contact">
+      <div class="subscribe_content">
+        <h2 class="section_header">Subscribe For Discounts</h2>
+         <p class="section_description">
+           Dont miss out on sweet deals! Subscribe now to recieve exclusive discounts and updates on our latest ice cream flavors and specialoffers.
          </p>
+         <form action="">
+           <input type="text" placeholder="Type Your Email">
+           <button class="btn">Subscribe</button>
+         </form>
+      </div>
+    </section>
 
-       </div>
-       <!--Social Icons-->
-    </div>
-    <script src="./js/main.js"></script>
-  </body>
+    <footer>
+      <div class="section_container footer_container">
+         <div class="footer_col">
+           <a href="#" class="logo">Ice <span>Worlds</span></a>
+         </div>
+         <div class="footer_col">
+           <ul class="footer_links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+           </ul>
+         </div>
+         <div class="footer_col">
+              <ul class="socials">
+           <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+           </li>
+           <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+           <li>
+            <a href="#"><i class="ri-pinterest-line"></i></a>
+            </li>
+           <li>
+            <a href="#"><i class="ri-phone-fill"></i></a>
+           </li>
+         </ul>
+         </div>
+      </div>
+      <div class="footer_bar">
+         Copyright  2026 Web Design Mastery .All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+   </body>
 
 </html>
